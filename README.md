@@ -7,7 +7,7 @@ based on Ubuntu 20.04.
 
 Saved in `~/.vimrc`.
 
-```vim
+```
 syntax on
 set tabstop=4
 set shiftwidth=4
