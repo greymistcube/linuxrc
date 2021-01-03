@@ -11,47 +11,47 @@ override_git_prompt_colors() {
         GIT_PROMPT_NETWORK_CONNECTION=""
     fi
 
-	GIT_PROMPT_THEME_NAME="Link_Ubuntu"
+    GIT_PROMPT_THEME_NAME="Link_Ubuntu"
 
-	# start of the git info string
-	GIT_PROMPT_PREFIX="\n${BoldWhite}["
-	# the end of the git info string
-	GIT_PROMPT_SUFFIX="${BoldWhite}]"
-	# separates each item
-	GIT_PROMPT_SEPARATOR="${BoldWhite}|"
+    # start of the git info string
+    GIT_PROMPT_PREFIX="\n${BoldWhite}["
+    # the end of the git info string
+    GIT_PROMPT_SUFFIX="${BoldWhite}]"
+    # separates each item
+    GIT_PROMPT_SEPARATOR="${BoldWhite}|"
 
-	# the git branch that is active in the current directory
-	GIT_PROMPT_BRANCH="${BoldMagenta}"
-	# used if the git branch that is active in the current directory is $GIT_PROMPT_MASTER_BRANCHES
-	GIT_PROMPT_MASTER_BRANCH="${GIT_PROMPT_BRANCH}"
-	# the number of staged files/directories
-	GIT_PROMPT_STAGED="${BoldCyan}● "
-	# the number of files in conflict
-	GIT_PROMPT_CONFLICTS="${BoldRed}✖ "
-	# the number of changed files
-	GIT_PROMPT_CHANGED="${BoldCyan}✚ "
+    # the git branch that is active in the current directory
+    GIT_PROMPT_BRANCH="${BoldMagenta}"
+    # used if the git branch that is active in the current directory is $GIT_PROMPT_MASTER_BRANCHES
+    GIT_PROMPT_MASTER_BRANCH="${GIT_PROMPT_BRANCH}"
+    # the number of staged files/directories
+    GIT_PROMPT_STAGED="${BoldCyan}● "
+    # the number of files in conflict
+    GIT_PROMPT_CONFLICTS="${BoldRed}✖ "
+    # the number of changed files
+    GIT_PROMPT_CHANGED="${BoldCyan}✚ "
 
-	# the number of untracked files/dirs
-	GIT_PROMPT_UNTRACKED="${BoldCyan}…"
-	# the number of stashed files/dir
-	GIT_PROMPT_STASHED="${BoldMagenta}⚑ "
-	# a colored flag indicating a "clean" repo
-	GIT_PROMPT_CLEAN="${BoldGreen}✔ "                   
+    # the number of untracked files/dirs
+    GIT_PROMPT_UNTRACKED="${BoldCyan}…"
+    # the number of stashed files/dir
+    GIT_PROMPT_STASHED="${BoldMagenta}⚑ "
+    # a colored flag indicating a "clean" repo
+    GIT_PROMPT_CLEAN="${BoldGreen}✔ "
 
-	GIT_PROMPT_VIRTUALENV="${BoldWhite}(${BoldBlue}_VIRTUALENV_${BoldWhite}) "
-	GIT_PROMPT_UPSTREAM=" {${Magenta}_UPSTREAM_${ResetColor}}"
+    GIT_PROMPT_VIRTUALENV="${BoldWhite}(${BoldBlue}_VIRTUALENV_${BoldWhite}) "
+    GIT_PROMPT_UPSTREAM=" {${Magenta}_UPSTREAM_${ResetColor}}"
 
-	GIT_PROMPT_COMMAND_OK="${BoldGreen}\${?}${ResetColor}"
-	GIT_PROMPT_COMMAND_FAIL="${BoldRed}\${?}${ResetColor}"
+    GIT_PROMPT_COMMAND_OK="${BoldGreen}\${?}${ResetColor}"
+    GIT_PROMPT_COMMAND_FAIL="${BoldRed}\${?}${ResetColor}"
 
-	GIT_PROMPT_START_USER="${GIT_PROMPT_NETWORK_CONNECTION}${BoldGreen}\u ${BoldYellow}@ ${BoldGreen}\h ${BoldYellow}: ${BoldBlue}\w"
-	GIT_PROMPT_START_ROOT="${GIT_PROMPT_NETWORK_CONNECTION}${BoldRed}\u ${BoldYellow}@ ${BoldRed}\h ${BoldYellow}: ${BoldBlue}\w"
+    GIT_PROMPT_START_USER="${GIT_PROMPT_NETWORK_CONNECTION}${BoldGreen}\u ${BoldYellow}@ ${BoldGreen}\h ${BoldYellow}: ${BoldBlue}\w"
+    GIT_PROMPT_START_ROOT="${GIT_PROMPT_NETWORK_CONNECTION}${BoldRed}\u ${BoldYellow}@ ${BoldRed}\h ${BoldYellow}: ${BoldBlue}\w"
 
-	GIT_PROMPT_END_USER=" _LAST_COMMAND_INDICATOR_ $ "
-	GIT_PROMPT_END_ROOT=" _LAST_COMMAND_INDICATOR_ # "
+    GIT_PROMPT_END_USER=" _LAST_COMMAND_INDICATOR_ $ "
+    GIT_PROMPT_END_ROOT=" _LAST_COMMAND_INDICATOR_ # "
 
-	# This symbol is written after the branch, if the branch is not tracked
-	GIT_PROMPT_SYMBOLS_NO_REMOTE_TRACKING="${BoldWhite}⭑ "
+    # This symbol is written after the branch, if the branch is not tracked
+    GIT_PROMPT_SYMBOLS_NO_REMOTE_TRACKING="${BoldWhite}⭑ "
 }
 
 reload_git_prompt_colors "Evermeet_Ubuntu"
