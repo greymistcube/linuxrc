@@ -7,7 +7,7 @@ based on Ubuntu 20.04.
 
 Saved in `.vimrc`.
 
-```
+```vim
 syntax on
 set tabstop=4
 set shiftwidth=4
@@ -46,21 +46,20 @@ and `<name>` should be replaced accordingly.
 Added to `.bashrc`. Uses [bash-git-prompt][bash_git_prompt_url]
 together with the included customized theme named `Link_Ubuntu.bgptheme`.
 
-```
-# bash git prompt start
+```sh
+# bash git prompt
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
     GIT_PROMPT_ONLY_IN_REPO=0
     GIT_PROMPT_THEME=Link_Ubuntu
     source $HOME/.bash-git-prompt/gitprompt.sh
 fi
-# bash git prompt end
 ```
 
 ### Directory Trimming
 
 Additionally, the following is added for directory trimming.
 
-```
+```sh
 # Trim directory path
 PROMPT_DIRTRIM=1
 ```
