@@ -18,7 +18,7 @@ set hlsearch
 
 ## Git
 
-Saved in `.gitconfig`. Fields `<github_token>`, `<email_address>`,
+Saved in `~/.gitconfig`. Fields `<github_token>`, `<email_address>`,
 and `<name>` should be replaced accordingly.
 
 ```
@@ -44,8 +44,9 @@ and `<name>` should be replaced accordingly.
 
 ### Git Prompt
 
-Added to `.bashrc`. Uses [bash-git-prompt][bash_git_prompt_url]
+Added to `~/.bashrc`. Uses [bash-git-prompt][bash_git_prompt_url]
 together with the included customized theme named `Link_Ubuntu.bgptheme`.
+The custom theme should be placed in `~/.bash-git-prompt/themes/`.
 
 ```sh
 # bash git prompt
@@ -58,7 +59,7 @@ fi
 
 ### Trimmed Directory Path
 
-Additionally, the following is added for directory trimming.
+The following is added to `~/.bashrc` for directory trimming.
 
 ```sh
 # Trim directory path
@@ -86,7 +87,8 @@ export LESS_TERMCAP_ZW=$(tput rsupm)
 export GROFF_NO_SGR=1
 ```
 
-Additionally, in order to be activated the following should be added to `~/.bashrc`.
+Additionally, in order to be activated the following should also be added to
+`~/.bashrc`.
 
 ```sh
 # Get color support for 'less'
