@@ -55,3 +55,4 @@ override_git_prompt_colors() {
 }
 
 reload_git_prompt_colors "Evermeet_Ubuntu"
+
