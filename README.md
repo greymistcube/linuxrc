@@ -35,6 +35,7 @@ and `<name>` should be replaced accordingly.
 
 [core]
     editor = vim
+    pager = less
 
 [alias]
     graph = log --graph --oneline
