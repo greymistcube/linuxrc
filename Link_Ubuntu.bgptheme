@@ -5,7 +5,7 @@
 
 override_git_prompt_colors() {
     # if connected through a network, add an icon
-    if [[ $(who am i) =~ \([0-9\.]+\)$ ]]; then
+    if [[ $(who am i) =~ \(.+\)$ ]]; then
         GIT_PROMPT_NETWORK_CONNECTION="${BoldYellow}⌁ "
     else
         GIT_PROMPT_NETWORK_CONNECTION=""
